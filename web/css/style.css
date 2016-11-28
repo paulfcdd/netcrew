@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Tahoma, Arial, Helvetica, Verdana, sans-serif;
+}
+html,
+body {
+  height: 100%;
+}
+html .wrapper,
+body .wrapper {
+  display: table;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+html .wrapper .content,
+body .wrapper .content {
+  height: 100%;
+}
+html .wrapper .content .row-content,
+body .wrapper .content .row-content {
+  height: inherit;
+}
+html .wrapper .content .row-content .left-block,
+body .wrapper .content .row-content .left-block {
+  height: inherit;
+  background: #67BCDB;
+  padding: 0 100px;
+}
+html .wrapper .content .row-content .left-block .left-menu,
+body .wrapper .content .row-content .left-block .left-menu {
+  border: none;
+  font-size: 15px;
+  font-weight: 500;
+  border-bottom: 1px solid white;
+}
+html .wrapper .content .row-content .left-block .left-menu .active,
+body .wrapper .content .row-content .left-block .left-menu .active {
+  background-color: transparent;
+}
+html .wrapper .content .row-content .left-block .left-menu .active a,
+body .wrapper .content .row-content .left-block .left-menu .active a {
+  background-color: transparent;
+}
+html .wrapper .content .row-content .left-block .left-menu li,
+body .wrapper .content .row-content .left-block .left-menu li {
+  background-color: transparent;
+}
+html .wrapper .content .row-content .left-block .left-menu li a,
+body .wrapper .content .row-content .left-block .left-menu li a {
+  color: white;
+  border: none;
+}
+html .wrapper .content .row-content .left-block .left-menu li a:hover,
+body .wrapper .content .row-content .left-block .left-menu li a:hover,
+html .wrapper .content .row-content .left-block .left-menu li a:active,
+body .wrapper .content .row-content .left-block .left-menu li a:active,
+html .wrapper .content .row-content .left-block .left-menu li a:focus,
+body .wrapper .content .row-content .left-block .left-menu li a:focus {
+  border: none;
+  background-color: transparent;
+}
