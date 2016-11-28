@@ -28,6 +28,32 @@ body .wrapper .content .row-content .left-block {
   background: #67BCDB;
   padding: 0 100px;
 }
+html .wrapper .content .row-content .left-block .switch-lang,
+body .wrapper .content .row-content .left-block .switch-lang {
+  background-color: transparent;
+  border-color: transparent;
+  outline: none;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 0;
+}
+html .wrapper .content .row-content .left-block .switch-lang:hover,
+body .wrapper .content .row-content .left-block .switch-lang:hover {
+  border-bottom: 2px solid white;
+}
+html .wrapper .content .row-content .left-block .btn:focus,
+body .wrapper .content .row-content .left-block .btn:focus {
+  outline: none;
+}
+html .wrapper .content .row-content .left-block .btn:active,
+body .wrapper .content .row-content .left-block .btn:active {
+  outline: none;
+  box-shadow: none;
+}
+html .wrapper .content .row-content .left-block .btn:active:focus,
+body .wrapper .content .row-content .left-block .btn:active:focus {
+  outline: none;
+}
 html .wrapper .content .row-content .left-block .left-menu,
 body .wrapper .content .row-content .left-block .left-menu {
   border: none;
@@ -37,15 +63,23 @@ body .wrapper .content .row-content .left-block .left-menu {
 }
 html .wrapper .content .row-content .left-block .left-menu .active,
 body .wrapper .content .row-content .left-block .left-menu .active {
-  background-color: transparent;
+  background-color: white;
+  margin-bottom: 0;
 }
 html .wrapper .content .row-content .left-block .left-menu .active a,
 body .wrapper .content .row-content .left-block .left-menu .active a {
   background-color: transparent;
+  color: #67BCDB;
 }
 html .wrapper .content .row-content .left-block .left-menu li,
 body .wrapper .content .row-content .left-block .left-menu li {
   background-color: transparent;
+  margin-bottom: 0;
+}
+html .wrapper .content .row-content .left-block .left-menu li:hover,
+body .wrapper .content .row-content .left-block .left-menu li:hover {
+  transition: background-color 0.5s ease;
+  background-color: white;
 }
 html .wrapper .content .row-content .left-block .left-menu li a,
 body .wrapper .content .row-content .left-block .left-menu li a {
@@ -53,11 +87,47 @@ body .wrapper .content .row-content .left-block .left-menu li a {
   border: none;
 }
 html .wrapper .content .row-content .left-block .left-menu li a:hover,
-body .wrapper .content .row-content .left-block .left-menu li a:hover,
+body .wrapper .content .row-content .left-block .left-menu li a:hover {
+  border: none;
+  background-color: transparent;
+  color: #67BCDB;
+}
 html .wrapper .content .row-content .left-block .left-menu li a:active,
 body .wrapper .content .row-content .left-block .left-menu li a:active,
 html .wrapper .content .row-content .left-block .left-menu li a:focus,
 body .wrapper .content .row-content .left-block .left-menu li a:focus {
   border: none;
   background-color: transparent;
+}
+html .wrapper .content .row-content .right-block,
+body .wrapper .content .row-content .right-block {
+  height: inherit;
+}
+html .wrapper .content .row-content .right-block .dynamic-content .contact_us_header,
+body .wrapper .content .row-content .right-block .dynamic-content .contact_us_header {
+  color: #777777;
+}
+html .wrapper .content .row-content .right-block .dynamic-content .contact-blockquote #telegram,
+body .wrapper .content .row-content .right-block .dynamic-content .contact-blockquote #telegram {
+  border-left: 5px solid #0088cc;
+}
+html .wrapper .content .row-content .right-block .dynamic-content .contact-blockquote #telegram a,
+body .wrapper .content .row-content .right-block .dynamic-content .contact-blockquote #telegram a {
+  color: #0088cc;
+}
+html .wrapper .content .row-content .right-block .dynamic-content .contact-blockquote #whatsapp,
+body .wrapper .content .row-content .right-block .dynamic-content .contact-blockquote #whatsapp {
+  border-left: 5px solid #25d366;
+}
+html .wrapper .content .row-content .right-block .dynamic-content .contact-blockquote #whatsapp p,
+body .wrapper .content .row-content .right-block .dynamic-content .contact-blockquote #whatsapp p {
+  color: #25d366;
+}
+html .wrapper .content .row-content .right-block .dynamic-content .contact-blockquote #skype,
+body .wrapper .content .row-content .right-block .dynamic-content .contact-blockquote #skype {
+  border-left: 5px solid #00aff0;
+}
+html .wrapper .content .row-content .right-block .dynamic-content .contact-blockquote #skype p,
+body .wrapper .content .row-content .right-block .dynamic-content .contact-blockquote #skype p {
+  color: #00aff0;
 }

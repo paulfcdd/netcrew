@@ -9,7 +9,8 @@ $app
 $app
 	->post('/switch_lang', function () use ($app, $service) {
 		if ($service->switchLang($_POST['lang']) == true) {
-			return $app->redirect($app['url_generator']->generate('index'));
+			$path = $app['url_generator']->generate('index');
+			return $app->redirect($path.$_POST['hash']);
 		} else {
 			return $service->setLang($_POST['lang']);
 		}

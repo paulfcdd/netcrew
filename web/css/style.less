@@ -5,6 +5,11 @@
 @hdscreen: ~"only screen and (min-width: 1026px)";
 
 @left-block-color: #67BCDB;
+@main-text-color: #777777;
+@telegram-color: #0088cc;
+@whatsapp-color: #25d366;
+@skype-color: #00aff0;
+@viber-color: #59267c;
 
 * {
 	margin: 0;
@@ -34,6 +39,32 @@ body {
 					background: @left-block-color;
 					padding: 0 100px;
 
+					.switch-lang {
+						background-color: transparent;
+						border-color: transparent;
+						outline: none;
+						text-transform: uppercase;
+						color: white;
+						border-radius: 0;
+
+						&:hover {
+							border-bottom: 2px solid white;
+						}
+					}
+
+					.btn:focus {
+						outline: none;
+					}
+
+					.btn:active {
+						outline: none;
+						box-shadow: none;
+					}
+
+					.btn:active:focus {
+						outline: none;
+					}
+
 					.left-menu {
 						border: none;
 						font-size: 15px;
@@ -41,22 +72,73 @@ body {
 						border-bottom: 1px solid white;
 
 						.active {
-							background-color: transparent;
+							background-color: white;
+							margin-bottom: 0;
+
+							//&:last-child {
+							//	margin-bottom: 0;
+							//}
 							a {
 								background-color: transparent;
+								color: @left-block-color;
 							}
 						}
 
 						li {
 							background-color: transparent;
+							margin-bottom: 0;
+
+							&:hover {
+								transition: background-color .5s ease;
+								background-color: white;
+							}
 
 							a{
 								color: white;
 								border: none;
 
-								&:hover, &:active, &:focus {
+								&:hover {
 									border: none;
 									background-color: transparent;
+									color: @left-block-color;
+								}
+
+								&:active, &:focus {
+									border: none;
+									background-color: transparent;
+								}
+							}
+						}
+					}
+				}
+
+				.right-block {
+					height: inherit;
+
+					.dynamic-content {
+						.contact_us_header {
+							color: @main-text-color;
+						}
+
+						.contact-blockquote {
+							#telegram {
+								border-left: 5px solid @telegram-color;
+								a {
+									color: @telegram-color;
+								}
+							}
+
+							#whatsapp {
+								 border-left: 5px solid @whatsapp-color;
+								 p {
+									 color: @whatsapp-color;
+								 }
+							 }
+
+							#skype {
+								border-left: 5px solid @skype-color;
+								p {
+									color: @skype-color;
 								}
 							}
 						}

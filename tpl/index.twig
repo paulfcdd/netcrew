@@ -20,11 +20,12 @@
 		</div>
 		<div class="row">
 			<div class="col-xs-12">
-				<form class="form-horizontal  text-center" action="{{ path('switch_lang') }}" method="post">
+				<form class="form-horizontal text-center lang-form" action="{{ path('switch_lang') }}" method="post">
 					<div class="form-group">
-						<button type="submit" name="lang" class="btn btn-default" value="en">en</button>
-						<button type="submit" name="lang" class="btn btn-default" value="ru">ru</button>
-						<button type="submit" name="lang" class="btn btn-default" value="pl">pl</button>
+						<button type="submit" name="lang" class="btn btn-default switch-lang" value="en">en</button>
+						<button type="submit" name="lang" class="btn btn-default switch-lang" value="ru">ru</button>
+						<button type="submit" name="lang" class="btn btn-default switch-lang" value="pl">pl</button>
+						<input type="text" value="" name="hash" id="currentHash" hidden>
 					</div>
 				</form>
 			</div>
@@ -34,13 +35,21 @@
 
 	<div class="col-lg-9 right-block">
 		<div class="tab-content">
-			<div class="tab-pane active" id="main">
+			<div class="tab-pane" id="main">
 				{% include 'main.twig' %}
 			</div>
-			<div class="tab-pane" id="services">services</div>
-			<div class="tab-pane" id="projects">projects</div>
-			<div class="tab-pane" id="about">about</div>
-			<div class="tab-pane" id="contacts">contacts</div>
+			<div class="tab-pane" id="services">
+				{% include 'services.twig' %}
+			</div>
+			<div class="tab-pane" id="projects">
+				{% include 'projects.twig' %}
+			</div>
+			<div class="tab-pane" id="about">
+				{% include 'about.twig' %}
+			</div>
+			<div class="tab-pane" id="contacts">
+				{% include 'contacts.twig' %}
+			</div>
 		</div>
 	</div>
 {% endblock %}
